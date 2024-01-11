@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="design.css">
+    
+    <title>Zmien i skompresuj zdjecie - codefix.it</title>
+</head>
+<body>
+
+
+    <div class="blok">
+        <div class="przeslij-blok">
+            <input type="file" accept="image/*" hidden>
+            <img src="przeslij.png" alt="">
+            <p>Przeglądaj Pliki Do Przesłania</p>
+        </div>
+        <div class="srodek">
+            <div class="wiersz rozmiary">
+                <div class="kolumna szerokosc">
+                    <label>Szerokość</label>
+                    <input type="number">
+                </div>
+                
+                <div class="kolumna wysokosc">
+                    <label>Wysokość</label>
+                    <input type="number">
+                </div>
+            </div>
+            <div class="wiersz pola">
+                <div class="kolumna wspolczynnik">
+                    <input type="checkbox" id="wspolczynnik" checked>
+                    <label for="wspolczynnik">Zablokuj stosunek</label>
+                </div>
+
+                <div class="kolumna rozdzielczosc">
+                    <input type="checkbox" id="rozdzielczosc">
+                    <label for="rozdzielczosc">Zmniejsz rozdzielczosc</label>
+                </div>
+            </div>
+            <button class="pobierz-przycisk">Pobierz Obraz</button>
+        </div>
+    </div>
+
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/264a91385a.js" crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="skrypt.js" defer></script>
+
+</body>
+</html>
